@@ -1,0 +1,18 @@
+{
+  "name": "filtration-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build --base=./",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "vite": "7.3.1"
+  }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101714">
+<title>Basement Filtration | 3D System Viewer</title>
+</head>
+<body>
+<header class="masthead"><span class="mark" aria-hidden="true">◈</span><span>Water systems</span><span class="mast-note">INTERACTIVE MODEL</span></header>
+<main>
+<div class="intro">
+<h1>Basement filtration</h1>
+<p>Pentair Everpure QC7I twin manifold · Three-valve bypass</p>
+</div>
+<div class="layout">
+<section class="viewer" aria-label="Interactive three-dimensional plumbing model">
+<div id="stage"></div>
+<div class="toolbar" aria-label="Camera and dimensions">
+<div id="cameras" role="group" aria-label="Camera presets">
+<button data-camera="iso" aria-pressed="true">Isometric</button>
+<button data-camera="front" aria-pressed="false">Front elevation</button>
+<button data-camera="side" aria-pressed="false">Side clearance</button>
+<button data-camera="close" aria-pressed="false">Everpure close-up</button>
+</div>
+<button id="dimensions" aria-pressed="true">↔ Dimensions</button>
+</div>
+<div class="scene-footer"><span><i></i> Active water path</span><span>Drag to orbit · Pinch or scroll to zoom</span></div>
+</section>
+<aside>
+<section class="panel">
+<h2>Operating mode</h2>
+<div id="modes" role="group" aria-label="Operating mode">
+<button data-mode="service" aria-pressed="true">Normal service</button>
+<button data-mode="swap" aria-pressed="false">Bypass / filter swap</button>
+</div>
+<p id="mode-description" aria-live="polite">Water passes through both cartridges and returns to the appliance riser.</p>
+<div class="readout"><span>Manifold outlet</span><strong id="pressure">58 <small>PSI</small></strong></div>
+<ul class="valves">
+<li><b>V1</b> Inlet isolation <span id="v1" class="open">Open</span></li>
+<li><b>V2</b> Bypass <span id="v2">Closed</span></li>
+<li><b>V3</b> Outlet isolation <span id="v3" class="open">Open</span></li>
+</ul>
+</section>
+<section class="panel assembly">
+<h2>Filter assembly</h2>
+<dl><div><dt>Manifold</dt><dd>QC7I · EV9272-22</dd></div><div><dt>Cartridges</dt><dd>2 × 7FC-P · EV9595-51</dd></div><div><dt>Pipe</dt><dd>¾″ Type L copper</dd></div><div><dt>Port centerline</dt><dd>48″ above floor</dd></div></dl>
+</section>
+</aside>
+</div>
+</main>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
