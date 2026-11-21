@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101714">
+<title>Whole-House Filtration | 3D System Viewer</title>
+</head>
+<body>
+<header class="masthead"><span class="mark" aria-hidden="true">◈</span><span>Water systems</span><nav class="area-nav" aria-label="Filtration areas"><ul><li><a href="./index.html">Drinking loop</a></li><li><a href="./whole-house.html" aria-current="page">Whole-house POE</a></li></ul></nav><span class="mast-note">INTERACTIVE MODEL</span></header>
+<main>
+<div class="intro">
+<h1>Whole-house filtration</h1>
+<p>1.25″ main POE · Pentek 150235 Big Blue 20″ → IPW WS 1.25 catalytic carbon → Eco-Tech DLA-G20 air gap</p>
+</div>
+<div class="layout">
+<section class="viewer" aria-label="Interactive three-dimensional whole-house plumbing model">
+<div id="stage"></div>
+<div class="toolbar" aria-label="Camera and dimensions">
+<div id="cameras" role="group" aria-label="Camera presets">
+<button type="button" data-camera="iso" aria-pressed="true">Isometric</button>
+<button type="button" data-camera="front" aria-pressed="false">Front elevation</button>
+<button type="button" data-camera="side" aria-pressed="false">Side clearance</button>
+<button type="button" data-camera="stage1" aria-pressed="false">Big Blue &amp; gauges</button>
+<button type="button" data-camera="drain" aria-pressed="false">Clack &amp; air gap</button>
+</div>
+<button type="button" id="dimensions" aria-pressed="true">↔ Dimensions</button>
+</div>
+<div class="scene-footer"><span class="legend"><span><i class="flow-dot"></i> Active supply path</span><span><i class="drain-dot"></i> Backwash / flush drain</span></span><span>Drag to orbit · Pinch or scroll to zoom</span></div>
+</section>
+<aside>
+<section class="panel">
+<h2>Operating mode</h2>
+<div id="modes" role="group" aria-label="Operating mode">
+<button type="button" data-mode="service" aria-pressed="true">Normal service</button>
+<button type="button" data-mode="backwash" aria-pressed="false">Backwash cycle (9 GPM)</button>
+<button type="button" data-mode="swap" aria-pressed="false">Bypass / filter swap</button>
+<button type="button" data-mode="flush" aria-pressed="false">Carbon flush / sample</button>
+</div>
+<p id="mode-description" aria-live="polite">Full 1.25″ main flows through the 20″ Big Blue sediment housing and 2.5 cu ft catalytic carbon tank to the house.</p>
+<div class="readout-grid">
+<div class="readout-cell"><span>G1 Pre-filter</span><strong id="g1-pressure">62 <small>PSI</small></strong></div>
+<div class="readout-cell"><span>G2 Post-filter</span><strong id="g2-pressure">61 <small>PSI</small></strong></div>
+</div>
+<div class="readout delta-row"><span>Sediment ΔP · Clack</span><strong id="delta-p">1 <small>PSI</small></strong></div>
+<ul class="valves">
+<li><b>V1</b> Inlet isolation <span id="v1" class="open">Open</span></li>
+<li><b>V2</b> Full bypass <span id="v2">Closed</span></li>
+<li><b>V3</b> Outlet isolation <span id="v3" class="open">Open</span></li>
+<li><b>BD</b> Boiler drain <span id="bd">Closed</span></li>
+<li><b>WS</b> Clack WS1.25 <span id="ws" class="open">Service</span></li>
+</ul>
+</section>
+<section class="panel assembly">
+<h2>Bill of materials</h2>
+<dl>
+<div><dt>Stage 1</dt><dd>Pentek 150235 · 20″ Big Blue</dd></div>
+<div><dt>Cartridge</dt><dd>DGD-5005-20 (50→5 µm)</dd></div>
+<div><dt>Mount</dt><dd>Pentair 150061 on ¾″ ply</dd></div>
+<div><dt>Stage 2</dt><dd>IPW WS 1.25 · 13″×54″ tank</dd></div>
+<div><dt>Media</dt><dd>2.5 ft³ 12×40 cat. carbon</dd></div>
+<div><dt>Stage 3</dt><dd>Eco-Tech DLA-G20 · 2″ PVC</dd></div>
+<div><dt>Main pipe</dt><dd>1.25″ Type L copper</dd></div>
+<div><dt>Future UV</dt><dd>30″ straight copper run</dd></div>
+</dl>
+</section>
+</aside>
+</div>
+</main>
+<script type="module" src="/src/whole-house.js"></script>
+</body>
+</html>
