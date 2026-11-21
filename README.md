@@ -1,7 +1,10 @@
 # Basement-filter-setup
 # Basement filtration viewer
 
-An interactive Three.js model of a Pentair Everpure QC7I twin-manifold installation with a three-valve bypass.
+Interactive Three.js models for two separate areas of the basement water filtration system:
+
+- **Drinking loop (`index.html`)**: Pentair Everpure QC7I twin-manifold installation with a three-valve bypass on ¾″ Type L copper.
+- **Whole-house POE (`whole-house.html`)**: Full-flow 1.25″ point-of-entry system with a 3-valve "H" bypass, wall-mounted Pentek 150235 20″ Big Blue sediment pre-filter (DGD-5005-20 on Pentair 150061 L-bracket), floor-standing IPW WS 1.25 (13″×54″ catalytic carbon tank + Clack WS1.25 valve), dual 0–100 PSI gauges, 1/2″ boiler drain sample port, 30″ straight future UV space, and ceiling-routed PEX backwash drain into an Eco-Tech DLA-G20 air gap atop a 2″ trapped and vented PVC standpipe.
 
 ## Run locally
 
@@ -12,9 +15,9 @@ npm ci
 npm run dev
 ```
 
-Drag to orbit, right-drag or use two fingers to pan, and scroll or pinch to zoom. The camera buttons reset the view and the Dimensions button toggles measurement lines. Normal service starts at 58 PSI. Bypass / filter swap opens the bypass bridge, isolates the loop, and animates pressure relief through the flush valve before settling at 0 PSI. Pressure and flow are illustrative.
+Use the top navigation bar to switch between **Drinking loop** and **Whole-house POE**. Drag to orbit, right-drag or use two fingers to pan, and scroll or pinch to zoom. The camera buttons reset the view and the Dimensions button toggles measurement lines and clearance envelopes. Pressure and flow animations are illustrative.
 
-The manifold ports are modeled at 48 inches above the floor. The bypass bridge is 60 inches above the floor. The 3-inch callout marks the cartridge removal envelope. Hardware profiles, thread detail, and cartridge graphics were created from the supplied description. Confirm physical fitting lengths and manifold port offsets on the actual hardware before using the rendering for fabrication.
+Confirm physical fitting lengths, valve dimensions, and manifold port offsets on the actual hardware before using the renderings for fabrication.
 
 ## Deploy
 
